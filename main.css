@@ -72,12 +72,11 @@ img{
     width: 100%;
 }
 .container{
+    width: var(--container-width);
     margin: 0 auto;
+    align-items: center;
 }
-.menu{
-    display: flex;
-    z-index: 100;
-}
+
 .menu-icon{
     display: none;
 }
@@ -101,7 +100,6 @@ img{
         flex-direction: column;
     }
     .menu {
-
         width: 100%;
         height: auto;
         display: flex;
@@ -330,6 +328,11 @@ section{
     width: 32%;
 }
 
+.buy-img{
+    height: 350px;
+    width: 100%;
+}
+
 .buy-desc{
     flex-direction: column;
 }
@@ -359,6 +362,11 @@ section{
 
 .recycling-pic{
     width:60%;
+}
+
+.recycling-img{
+    height: 520px;
+    width: 100%;
 }
 
 .recycling-desc{
@@ -490,5 +498,102 @@ section{
 }
 
 
-/* produxr */
+/* product */
 /* sub-menu */
+.sub-menu{
+    background-color: #916000;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-menu-container{
+    width: var(--container-width);
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.sub-menu a{
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 20px;
+    display: block;
+    padding: 16px;
+}
+
+.sub-menu-content{
+    flex-direction: row;
+}
+
+@media screen and (min-width: 0px) and (max-width: 490px){
+    .sub-menu{
+        display: none;
+    }
+}
+
+/* product */
+.product{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-container{
+    width: var(--container-width);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-content{
+    height:auto;
+    width:200px;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+.product-desc{
+    flex-direction: column;
+}
+
+.product-pic{
+    height:200px;
+    width:200px;
+}
+
+.product-img{
+    width: 100%;
+    height: 100%;
+}
+
+.buy-icon{
+    color: #916019;
+}
+
+.page a{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.page .page-click{
+    text-decoration:underline;
+    color: #AC8A46;
+}
+
+@media screen and (min-width: 0px) and (max-width: 490px){
+    .product-container{
+        width: var(--container-width-mobile);
+    }
+
+    .product-content{
+        width:160px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .product-pic{
+        height:160px;
+        width:160px;
+    }
+}
