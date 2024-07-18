@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container d-flex">
+            <div class="menu-mobile d-flex">
+                <div class="logo"><img src="/img/d’Perfume.png"/></div>
+                <div class="menu-icon d-flex">
+                    <div class="buy-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                    </div>
+                    <div id="menu-icon" class="menu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                          </svg>
+                    </div>
+                    
+                </div>
+            </div>
+            <ul id="menu" class="menu d-flex">
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
+                  </svg>Product</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                  </svg>log in</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                  </svg>Wishlist</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>Car(3)</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="banner d-flex">
+        <div class="banner-container d-flex">
+            <div class="banner-content d-flex">
+                <h2>Perfume your day</h2>
+                <p>A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the person who wears it.</p>
+                <input class="btn" type="button" value="Shop now"/>
+            </div>
+        </div>
+    </div>
+    <section class="introduce d-flex">
+        <div class="introduce-container d-flex">
+            <div class="introduce-content d-flex">
+                <div class="introduce-desc d-flex">
+                    <div class="">
+                        <h3>Gabrielle CHANEL</h3>
+                        <p class="p20">全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
+                        <a class="read-more" href="#">查看更多</a>
+                    </div>
+                </div>
+                <div class="introduce-pic">
+                    <img class="introduce-img" src="/img/index2.jpg"/>
+                </div>
+            </div>
+            <div class="introduce-content d-flex">
+                <div class="introduce-pic">
+                    <img class="introduce-img" src="/img/index3.png"/>
+                </div>
+                <div class="introduce-desc d-flex">
+                    <div class="">
+                        <h3>Five O’clock Au Gingembre</h3>
+                        <p class="p20">生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</p>
+                        <a class="read-more" href="#">查看更多</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="introduce-content d-flex">
+                <div class="introduce-desc d-flex">
+                    <div class="">
+                        <h3>CHANEL N°5</h3>
+                        <p class="p20">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+                        <a class="read-more" href="#">查看更多</a>
+                    </div>
+                </div>
+                <div class="introduce-pic">
+                    <img class="introduce-img" src="/img/index4.jpg"/>
+                </div>
+            </div>
+            <div class="introduce-content d-flex">
+                <div class="introduce-pic">
+                    <img class="introduce-img-full" src="/img/index5.jpg"/>
+                </div>
+                <div class="introduce-desc d-flex">
+                    <div class="">
+                        <h4>1.</h4>
+                        <h4>Levels of Preventive Maintenance Compliance</h4>
+                        <p class="p16">The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.</p>
+                    </div>
+                    <div class="">
+                        <h4>2.</h4>
+                        <h4>Percentage of Planned Maintenance</h4>
+                        <p class="p16">The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.</p>
+                    </div>
+                    <div class="">
+                        <h4>3.</h4>
+                        <h4>Critical percentage of planned maintenance</h4>
+                        <p class="p16">Calculating the critical percentage of planned maintenance will help you prioritize the most important operations that should be performed immediately.</p>
+                    </div>
+                    <input class="btn" type="button" value="Plan a free online training"/>
+            </div>
+        </div>
+    </section>
+    <section class="buy d-flex">
+        <div class="buy-container d-flex">
+            <div class="buy-content d-flex">
+                <div class="buy-pic">
+                    <img class="buy-img" src="/img/index6.jpg"/>
+                </div>
+                <div class="buy-desc d-flex">
+                    <h4>Poppy & Barley</h4>
+                    <p>Jo Malone</p>
+                    <p>NT$1,380 <del>NT$1,380</del></p>
+                </div>
+            </div>
+            <div class="buy-content d-flex">
+                <div class="buy-pic">
+                    <img class="buy-img" src="/img/index7.jpg"/>
+                </div>
+                <div class="buy-desc d-flex">
+                    <h4>Body Wash</h4>
+                    <p>Curology</p>
+                    <p>NT$1,580</p>
+                </div>
+            </div>
+            <div class="buy-content d-flex">
+                <div class="buy-pic">
+                    <img class="buy-img" src="/img/index8.jpg"/>
+                </div>
+                <div class="buy-desc d-flex">
+                    <h4>Apple Cider Vinegar Capsule</h4>
+                    <p>Tonik</p>
+                    <p>NT$1,580</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recycling d-flex">
+        <div class="recycling-container d-flex">
+            <div class="recycling-content d-flex">
+                <div class="recycling-pic">
+                    <img class="recycling-img" src="/img/index9.jpg"/>
+                </div>
+                <div class="recycling-desc d-flex">
+                    <div class="">
+                        <h3>Bottle-Recycling</h3>
+                        <p class="p20">Recycle your used empty bottles and be rewarded!</p>
+                        <p class="p16">For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.</p>
+                        <a class="read-more" href="#">查看更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="subscribe d-flex">
+        <div class="subscribe-container d-flex">
+            <div class="subscribe-content d-flex">
+                <h3>記得<br>訂閱已獲取更多資訊!</h3>
+                <div class="subscribe-mail">
+                    <input class="subscribe-input" type="text" placeholder="Your email address"/>
+                    <input class="subscribe-btn" type="button" value="Subscribe"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer d-flex">
+        <div class="footer-container d-flex">
+            <div class="footer-logo d-flex">
+                <img src="/img/d’Perfumewhite.png"/>
+            </div>
+            <div class="footer-dec">© 2020. All Rights Reserved.</div>
+            <ul class="footer-menu d-flex">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">log in</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+    $(function() {
+        $("#menu-icon").on( "click", function() {
+            $("#menu").slideToggle();
+        });
+    });
+</script>
+</html>
